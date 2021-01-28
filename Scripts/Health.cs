@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField]
     int actualHealth;
-    public static int currentHealth;
+    public int currentHealth;
     Animator anime;
     Rigidbody2D rb2d;
     Image fullHealth, midHealth, lowHealth;
@@ -44,11 +44,11 @@ public class Health : MonoBehaviour
             currentHealth = actualHealth;
     }
 
-
     public void SetInvincible()
     {
         currentHealth = 1000;
     }
+
     void Death()
     {
         GamePlayManager GPM = GameObject.Find("Canvas").GetComponent<GamePlayManager>();

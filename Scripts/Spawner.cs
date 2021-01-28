@@ -17,14 +17,7 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        if (isPlayer)
-        {
             tanks = new GameObject[1] { smallTank };
-        }
-        else
-        {
-            tanks = new GameObject[1] { smallTank};
-        }
     }
 
     public void StartSpawning()
