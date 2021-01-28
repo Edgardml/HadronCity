@@ -58,9 +58,9 @@ public class GamePlayManager : MonoBehaviour
             }
             stageStart = false;
             Animator anime = spawnPlayerPoints[0].GetComponent<Animator>();
-            
             anime.SetTrigger("Spawning");
             SetPlayerHealth();
+            UpdatePlayerLives();
         }
         else
         {
